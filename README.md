@@ -58,7 +58,7 @@ Socket programming finds applications in various domains, including web developm
 
 
 ## Client:
-
+```
 #Import socket module 
 import socket             
 #Create a socket object 
@@ -71,10 +71,10 @@ s.connect(('127.0.0.1', port))
 print (s.recv(1024).decode())
 #close the connection 
 s.close()
-
+```
 
 ## Server:
-
+```
 import socket             
 #next create a socket object 
 s = socket.socket()         
@@ -90,7 +90,7 @@ while True:
   c.send('Thank you for connecting'.encode()) 
   #Close the connection with the client 
 c.close()
-
+```
 ## Output:
 
 ## Client:
